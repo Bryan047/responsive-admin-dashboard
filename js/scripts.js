@@ -17,6 +17,14 @@ function closeSidebar() {
   }
 }
 
+window.Apex = {
+  chart:{
+    foreColor:'#fff',
+    toolbar: {
+      show: false
+    },
+  },
+};
 // ---------- CHARTS ----------
 
 // BAR CHART
@@ -33,7 +41,7 @@ const barChartOptions = {
       show: false,
     },
   },
-  colors: ['#246dec', '#cc3c43', '#367952', '#f5b74f', '#4f35a1'],
+  colors: ['#246dec', '#cc3c43', '#367952', '#f5b74f', '#C39BD3'],
   plotOptions: {
     bar: {
       distributed: true,
@@ -50,6 +58,7 @@ const barChartOptions = {
   },
   xaxis: {
     categories: ['Laptop', 'Phone', 'Monitor', 'Headphones', 'Camera'],
+   
   },
   yaxis: {
     title: {
@@ -74,6 +83,7 @@ const areaChartOptions = {
     {
       name: 'Sales Orders',
       data: [11, 32, 45, 32, 34, 52, 41],
+      
     },
   ],
   chart: {
@@ -83,16 +93,18 @@ const areaChartOptions = {
       show: false,
     },
   },
-  colors: ['#4f35a1', '#246dec'],
+  colors: ['#17A589', '#246dec'],
   dataLabels: {
     enabled: false,
   },
   stroke: {
     curve: 'smooth',
+    
   },
   labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
   markers: {
     size: 0,
+    
   },
   yaxis: [
     {
